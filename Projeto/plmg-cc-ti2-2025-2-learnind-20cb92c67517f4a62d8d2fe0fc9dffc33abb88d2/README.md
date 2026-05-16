@@ -78,28 +78,28 @@ Observação que o banco de dados está hospedado na nuvem (Microsoft Azure Post
 ## Endpoints principais (resumo)
 
 - Autenticação/Usuário
-	- `POST /usuario/register` — registrar usuário (form)
-	- `POST /usuario/login` — efetuar login (form)
-	- `GET /usuario/me` — dados do usuário logado (JSON)
-	- `POST /usuario/me/update` — atualizar dados
-	- `POST /usuario/logout` — logout
-	- `POST /usuario/me/delete` — excluir conta
+    - `POST /usuario/register` — registrar usuário (form)
+    - `POST /usuario/login` — efetuar login (form)
+    - `GET /usuario/me` — dados do usuário logado (JSON)
+    - `POST /usuario/me/update` — atualizar dados
+    - `POST /usuario/logout` — logout
+    - `POST /usuario/me/delete` — excluir conta
 
 - Vídeos
-	- `GET /videos` — listar (suporta `q` para busca e `categoria` para filtro)
-	- `GET /video/get?id=...` — obter vídeo por id
-	- `GET /videos/me` — vídeos do usuário logado
+    - `GET /videos` — listar (suporta `q` para busca e `categoria` para filtro)
+    - `GET /video/get?id=...` — obter vídeo por id
+    - `GET /videos/me` — vídeos do usuário logado
 
 - Favoritos
-	- `GET /favoritos/me` — vídeos favoritados do usuário
+    - `GET /favoritos/me` — vídeos favoritados do usuário
 
 - Categorias
-	- `POST /categoria/add` — adicionar categoria
-	- `POST /categoria/update` — atualizar categoria
+    - `POST /categoria/add` — adicionar categoria
+    - `POST /categoria/update` — atualizar categoria
 
 - Feedback
-	- `POST /feedback/add` — adicionar feedback a um vídeo
-	- `GET /feedbacks?videoId=...` — listar feedbacks de um vídeo
+    - `POST /feedback/add` — adicionar feedback a um vídeo
+    - `GET /feedbacks?videoId=...` — listar feedbacks de um vídeo
 
 As páginas estáticas estão em `src/main/resources/public` e a aplicação redireciona `GET /` para `/landPage/index.html`.
 
